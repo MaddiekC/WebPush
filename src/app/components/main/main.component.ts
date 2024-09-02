@@ -16,6 +16,8 @@ import { SwPush } from '@angular/service-worker';
 export class MainComponent {
   cookieService: any;
 
+  anyThing: any;
+
   constructor(
     private swPush: SwPush, private auxService: GlobalService) { }
 
@@ -68,6 +70,8 @@ export class MainComponent {
         //convertir en json y mostrar por consola
 
         console.log("JSON", JSON.stringify(subscriptionData));
+
+        this.anyThing = JSON.stringify(subscriptionData);
 
 
 
