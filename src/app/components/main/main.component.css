@@ -1,0 +1,14 @@
+.botonRed{
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.textC{
+    text-align: center;
+    padding-top: 100px;
+    font-style: italic !important; 
+}
