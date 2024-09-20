@@ -1,1 +1,23 @@
-<p>alert works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones Push</title>
+</head>
+<body>
+    <h1>Notificaciones Push Activas</h1>
+    <script>
+        // Registrar el Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function(registration) {
+                    console.log('Service Worker registrado con éxito:', registration.scope);
+                }).catch(function(error) {
+                    console.log('Fallo en el registro del Service Worker:', error);
+                });
+        }
+    </script>
+</body>
+</html>
